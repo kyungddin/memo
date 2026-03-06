@@ -15,3 +15,7 @@
   	Py_Finalize();
   }
 
+
+## 260306
+- std::string 더 공부하기
+- string VS CString 알아두기.. (CString은.. Window용?)
