@@ -39,3 +39,18 @@
 - CString과 String의 차이, 그리고 virtual의 적절한 사용법에 대해 공부하기
 - \r은 carriage return!
 - "Q"으로 git log를 탈출할 수 있다..!
+
+
+## 실제로 시스템콜을 직접 다룰 경우는 없을 것이다..!
+```
+C/C++ 코드
+↓
+Windows API
+↓
+User-mode system library
+↓
+System Call
+↓
+Kernel
+```
+- 우리의 시스템콜은 이렇게 호출되므로.. 우리는 간접적으로 시스템콜을 사용한다..
