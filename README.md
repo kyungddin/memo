@@ -1,9 +1,13 @@
 # memo
 
 
-## 260305
-- noexcept 구문에 대해 알아보기
+## ToDoList
+- 스핀락 / 뮤텍스 / 세마포어 공부하기
+- std::string 더 공부하기
 - 운영체제 복습할 방법 생각하기
+
+## 260305
+
 - Python in C/C++
 
   #include <Python.h>
@@ -14,11 +18,6 @@
   	PyRun_SimpleString("print('Hello from Python!')");
   	Py_Finalize();
   }
-
-
-## 260306
-- std::string 더 공부하기
-- string VS CString 알아두기.. (CString은.. Window용?)
 
 
 ## 260313
@@ -36,7 +35,7 @@
   - 따라서 sln(솔루션 파일)을 메모장으로 연 뒤에, proj 파일명과 디렉토리를 수정해줄 필요가 있다
   - 그리고 IDE 내에서도 단순히 프로젝트&솔루션 명 뿐만 아니라 네임스페이스 명도 신경써서 수정해주기
   - 이렇게 이쁘게 정리를 해줘야 나중에 Readme 쓸 때 편해진다
-- CString과 String의 차이, 그리고 virtual의 적절한 사용법에 대해 공부하기
+- virtual의 적절한 사용법에 대해 공부하기
 - \r은 carriage return!
 - "Q"으로 git log를 탈출할 수 있다..!
 
