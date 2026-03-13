@@ -38,3 +38,4 @@
   - 이렇게 이쁘게 정리를 해줘야 나중에 Readme 쓸 때 편해진다
 - CString과 String의 차이, 그리고 virtual의 적절한 사용법에 대해 공부하기
 - \r은 carriage return!
+- "Q"으로 git log를 탈출할 수 있다..!
