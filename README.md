@@ -11,7 +11,7 @@
 
 - Python in C/C++
 
-```python
+```cpp
   #include <Python.h>
 
   int main()
