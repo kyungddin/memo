@@ -1,11 +1,18 @@
 # memo
 
 
-## ToDoList
+## To Do List
 - 하루 날 잡아서 레포지토리 대청소
 - 스핀락 / 뮤텍스 / 세마포어 공부하기
 - std::string 더 공부하기
 - 운영체제 복습할 방법 생각하기
+<br>
+- roadmap
+  - 컴퓨터 네트워크: 하향식 접근
+  - SQL
+  - C++: STL, Effective, Algorithm, MFC
+  - Docker & Kubernetes
+  - Mini Project (OS/Network/DB)
 
 ## 260305
 
