@@ -81,3 +81,33 @@ Python VM
   - Java는 인터프리터와 컴파일 언어의 중간 정도
   - JVM, 즉 VM을 거치는 것은 맞지만, 자주 쓰는 코드는 JIT Compile을 통해 기계어로 변환
   - 그렇기에 Python과 C의 중간 정도의 속도를 자랑한다
+ 
+- 좀 더 정확한 Python 동작 Structure
+
+```
+Python code
+↓
+bytecode
+↓
+Python VM
+↓
+C 코드
+↓
+machine code
+↓
+CPU
+```
+
+```
+Python code
+↓
+bytecode
+↓
+Python VM
+↓
+C 코드
+↓
+machine code
+↓
+CPU
+```
