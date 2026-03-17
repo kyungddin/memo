@@ -98,6 +98,8 @@ machine code
 CPU
 ```
 
+<br>
+
 ```
 Python code
 ↓
