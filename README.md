@@ -115,3 +115,5 @@ CPU
 
 ## 260317
 - SCP → SSH를 이용한 파일 복사 프로토콜
+- Git을 통해 Github에 push/pull 해줄 때 HTTPS와 SSH를 사용
+  - Git은 파일이 아니라 commit graph와 object를 동기화합니다. 따라서 SCP가 아닌 SSH 프로토콜을 사용하는 것
