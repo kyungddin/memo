@@ -157,3 +157,10 @@ Python의 실제 컴파일 과정
     - 데몬이므로 이 명령어 exec 이후 부팅 시에 자동으로 해당 서비스 ON
   - 고정 IP 설정할 때의 기본 DNS는, 그 이더넷의 DNS를 처리하는 DNS서버의 IP이다
   - 회사 같은 제한된 네트워크에서는 DHCP를 막고, DNS와 게이트웨이를 지정해줘야 한다. 따라서 수동 IPv4 지정이 필요함
+ 
+
+## 260319
+- https://gomu92.tistory.com/13
+  - 만약 리눅스 깔 때 root로 SSH 비밀번호 접속 옵션 안 키면 이거 보고 수정해주자
+  - /etc/ssh/sshd_conf
+- PasswordAutentication 옵션으로 일반 유저도 접속 가능
