@@ -169,3 +169,6 @@ Python의 실제 컴파일 과정
 
 ## 260320
 - Powershell 마저 Linux 터미널 명령어가 안 먹는 경우가 많은데, Git-bash로 갈아타자..
+- Visual Studio Code에서 Git-Bash 기본 터미널로
+  - ctrl+,로 설정 들어가서 terminal.integrated.defaultprofile.windows 검색
+  - null -> git-bash
