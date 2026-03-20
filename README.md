@@ -172,3 +172,4 @@ Python의 실제 컴파일 과정
 - Visual Studio Code에서 Git-Bash 기본 터미널로
   - ctrl+,로 설정 들어가서 terminal.integrated.defaultprofile.windows 검색
   - null -> git-bash
+- 마운트 지점 설정 안 하면 매 부팅시마다 마운트 폴더 증발되는 이유.. 왜 그런지 파악하기
