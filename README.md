@@ -164,3 +164,8 @@ Python의 실제 컴파일 과정
   - 만약 리눅스 깔 때 root로 SSH 비밀번호 접속 옵션 안 키면 이거 보고 수정해주자
   - /etc/ssh/sshd_conf
 - PasswordAutentication 옵션으로 일반 유저도 접속 가능
+- Linux 쓸 때 User별로 디렉터리 환경이나 Config가 다르니까 그걸 감안해서 환경 세팅을 해주도록 하자
+
+
+## 260320
+- Powershell 마저 Linux 터미널 명령어가 안 먹는 경우가 많은데, Git-bash로 갈아타자..
