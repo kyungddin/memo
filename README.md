@@ -123,10 +123,10 @@ Python의 실제 컴파일 과정
 
 
 ## 260318
-- NAT vs 브리지
-  - NAT
+- NAT vs 브리지; VM 동작의 관점에서
+  - NAT (Network Address Translation)
   ```
-  NAT vs 브리지 진짜 차이
+  [VM] → [가상 NAT 라우터] → [Host PC] → [회사 네트워크 스위치] → 인터넷
   ```
   
   - 브리지
