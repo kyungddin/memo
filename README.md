@@ -9,6 +9,7 @@
 - virtual의 적절한 사용법에 대해 공부하기
 - 도커/쿠버네티스 공부
   - 도커 컴포즈와 그와 관련된 용어들로 우선 숙지..
+- 깃허브 Pull Request 공부
   
 <br>
 
@@ -173,3 +174,11 @@ Python의 실제 컴파일 과정
   - ctrl+,로 설정 들어가서 terminal.integrated.defaultprofile.windows 검색
   - null -> git-bash
 - 마운트 지점 설정 안 하면 매 부팅시마다 마운트 폴더 증발되는 이유.. 왜 그런지 파악하기
+
+
+## 260321
+- Pull Request, git 명령어의 branch 관리 등, 아직 깃허브 활용 역량을 더 키울 여지가 있다..!
+- README에 상대경로를 지정해서 이미지 넣기
+```
+<img src="img/scan.png">
+```
