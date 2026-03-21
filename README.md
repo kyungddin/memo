@@ -2,7 +2,8 @@
 
 
 ## To Do List
-- 하루 날 잡아서 레포지토리 대청소
+- 레포지토리 Readme 업데이트
+  - 다음에 Shadow Boxing Readme 채우기
 - 스핀락 / 뮤텍스 / 세마포어 공부하기
 - std::string 더 공부하기
 - 운영체제 복습할 방법 생각하기
