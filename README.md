@@ -221,4 +221,6 @@ Python의 실제 컴파일 과정
   - MariaDB는 localhost != 127.0.0.1
   - host를 안쓰거나 localhost를 쓰면 자동으로 UNIX Socket 통신
     - IP 명시가 안되어 있으니 파일 기반 UNIX Socket 통신..
+    - .sock라는 소켓 파일을 기반으로 커널에서 통신이 발생한다
   - 반대로 -h로 host를 127.0.0.1로 강제하면 TCP 통신
+    - Loopback 네트워크 지정하면 마리아DB에 의해 자동으로 포트가 3306으로 지정
