@@ -218,3 +218,7 @@ Python의 실제 컴파일 과정
 - docker compose는 자동으로 이미지를 갱신해주지 않으니, 명령어에 build를 붙여서 갱신해주기
 - vrrp_instance VI_1 = “하나의 가상 라우터(VIP + 상태 관리 단위)”
 - UNIX Socket이란게 있고.. MariaDB는 그러한 소켓 방식을 사용해서 통신할 수도 있는데.. 이에 대해선 좀 더 공부하자
+  - MariaDB는 localhost != 127.0.0.1
+  - host를 안쓰거나 localhost를 쓰면 자동으로 UNIX Socket 통신
+    - IP 명시가 안되어 있으니 파일 기반 UNIX Socket 통신..
+  - 반대로 -h로 host를 127.0.0.1로 강제하면 TCP 통신
