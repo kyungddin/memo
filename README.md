@@ -216,3 +216,4 @@ Python의 실제 컴파일 과정
 ## 260325
 - SQL 명령어에 문제가 있다면 SQL 서버와 socket 오류가 날 수 있다, 네트워크 문제로 생각하지 말고 syntax 체크부터!
 - docker compose는 자동으로 이미지를 갱신해주지 않으니, 명령어에 build를 붙여서 갱신해주기
+- vrrp_instance VI_1 = “하나의 가상 라우터(VIP + 상태 관리 단위)”
