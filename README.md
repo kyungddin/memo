@@ -296,3 +296,5 @@ FROM image:tag
 docker build -t image:tag .
 docker save -o image.tar image:tag
 ```
+
+- 도커 레이어는 한 번 쌓으면 돌이킬 수 없다. 매 레이어 마다 백업 tar로 대비하기
