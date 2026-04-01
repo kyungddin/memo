@@ -270,3 +270,29 @@ Python의 실제 컴파일 과정
 
 ## 260330
 - Docker의 경우 컨테이너가 종료되면 작업 내용이 날아갈 수 있으니, volume을 통한 디렉터리 마운트..? 로 이를 해결한다?
+
+
+## 260401: 만우절날 도커 공부
+- docker image 분석
+```
+docker load -i image.tar
+docker inspect image
+docker history image:tag
+docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive:latest image:tag
+```
+
+- docker-compose yml 분석
+  -  ocker-compose.yml에 environment를 사용하면, run 시에 필요한 옵션을 자동으로 할당
+
+- 컨테이너 안에 들어가서 실행 중인 프로세스 목록을 보는 명령어
+docker exec -it <컨테이너ID> ps aux 
+
+- 도커 이미지 업데이트 하기 (by using Dockerfile)
+```
+FROM image:tag
+"명령어"
+```
+```
+docker build -t image:tag .
+docker save -o image.tar image:tag
+```
