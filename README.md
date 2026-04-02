@@ -302,3 +302,6 @@ docker save -o image.tar image:tag
 
 ## 260402
 - Git CRLF 무시하는 옵션 찾아놓기
+- HTTP 프로토콜로 GIt 대용량 업로드 하면 push에서 터진다
+  - git config --global http.postBuffer 524288000
+  - 이걸로 해결
