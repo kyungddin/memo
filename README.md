@@ -305,3 +305,8 @@ docker save -o image.tar image:tag
 - HTTP 프로토콜로 GIt 대용량 업로드 하면 push에서 터진다
   - git config --global http.postBuffer 524288000
   - 이걸로 해결
+
+ 
+## 260403
+- Keepalived에서 track_script 해서 script가 실행되어도 역할 교체는 오로지 advertisement가 끊겼을때만 발생한다!
+  - 따라서 script에 의해서 역할교체도 원하면 priority를 0이하로 떨구도록 weight를 충분히 큰 음수로 지정해줄 것
