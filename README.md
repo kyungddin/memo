@@ -311,3 +311,8 @@ docker save -o image.tar image:tag
 - Keepalived에서 track_script 해서 script가 실행되어도 역할 교체는 오로지 advertisement가 끊겼을때만 발생한다!
   - 따라서 script에 의해서 역할교체도 원하면 priority를 0이하로 떨구도록 weight를 충분히 큰 음수로 지정해줄 것
 - 심심할때 PS 문제 풀기
+
+
+## 260406
+- keepalived의 경우 특정 옵션이 서로의 타이밍 이슈에 영향을 줄 수 있다 (ex: interval, timeout)
+- 쉘스크립트의 경우 if문은 0에서 활성화
