@@ -316,3 +316,7 @@ docker save -o image.tar image:tag
 ## 260406
 - keepalived의 경우 특정 옵션이 서로의 타이밍 이슈에 영향을 줄 수 있다 (ex: interval, timeout)
 - 쉘스크립트의 경우 if문은 0에서 활성화
+
+
+## 260408
+- C++ 빵꾸: 복사생성자, Static 멤버, 연산자 중복, 상속, 가상함수 (일단은 여기까지만..)
