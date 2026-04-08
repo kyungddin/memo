@@ -318,5 +318,9 @@ docker save -o image.tar image:tag
 - 쉘스크립트의 경우 if문은 0에서 활성화
 
 
+## 260407
+- openCV: 모폴로지, 히스토그램 평탄화, channel split& merge
+  - 이것들 아직 좀 부족함.. 많이
+
 ## 260408
 - C++ 빵꾸: 복사생성자, Static 멤버, 연산자 중복, 상속, 가상함수 (일단은 여기까지만..)
