@@ -326,3 +326,11 @@ docker save -o image.tar image:tag
 - C++ 빵꾸: 복사생성자, Static 멤버, 연산자 중복, 상속, 가상함수 (일단은 여기까지만..)
 - 보조기억장치가 여러 개 있는 상황에서, EFI가 깔리지 않은 곳에 OS를 설치하면 부팅 옵션에서 볼 수 없다..
 - 부트시스템 공부: EFI, 파티션, 포맷 등등
+- 리눅스 시스템에서 파티션 정리하기
+1. $ lsblk 로 메모리 체크
+2. $ sudo wipefs -a /dev/sda 이건 sda 저장장치 날리기
+3. $ sudo fdisk /dev/sda 새 파티션 생성 (n으로 새로운 파티션 생성 w로 저장)
+4. $ sudo mkfs.ext4 /dev/sda1 (파티션 데이터용으로 만들어주기)
+5. (centos8 기준) $ sudo grub2-mkconfig -o /boot/grub2/grub.cfg 로 grub(boot loader) 정리
+- 비프음 죽이기
+$ echo 'setterm -blength 0' >> ~/.bashrc
