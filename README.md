@@ -343,3 +343,9 @@ $ echo 'setterm -blength 0' >> ~/.bashrc
   - $ make 나 $ pacman 쓰려면 msys2 터미널로 해주기!
  
 - 리눅스는 윈도우처럼 C: D: 와 같은 드라이브 문자를 안 쓰므로.. 해당 저장공간을 사용하려면 디렉터리를 생성 후 /dev에 있는 저장장치 파일과 마운트를 해줘야함
+  - 따로 마운트하지 않은 모든 디렉터리는 루트(/)가 올라가 있는 그 파티션(= OS가 설치된 파티션)에 저장된다.
+  - 마운트해주기
+    1. $ sudo mkdir /data
+    2. $ sudo mount /dev/sda1 /data
+    3. $ sudo blkid ## UUID 확인
+    4. $ UUID=xxxx-xxxx  /data  ext4  defaults  0  2 # 이걸해줘야 영구적으로 마운트!
