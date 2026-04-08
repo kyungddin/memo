@@ -334,3 +334,6 @@ docker save -o image.tar image:tag
 5. (centos8 기준) $ sudo grub2-mkconfig -o /boot/grub2/grub.cfg 로 grub(boot loader) 정리
 - 비프음 죽이기
 $ echo 'setterm -blength 0' >> ~/.bashrc
+- 파티션의 중요성
+  - GPT: 파티션은 ‘공간 분할’이 아니라 운영체제에게 “이 디스크를 어떻게 써라”라고 알려주는 ‘메타데이터(설계도)’임
+  - 즉, 운영체제 입장에서 그냥 /dev/sda는 원시데이터 덩어리라 데이터 저장용으로 활용 불가
