@@ -450,3 +450,7 @@ Ninja는 **처음부터 병렬 실행 엔진으로 설계**됨.
 - 코드 비교하기? 나중에 필요한 상황이 오면 익혀두자
   - git diff?
   - visual studio compare 기능?
+
+- 당장 더 익혀야 할 것: cpp, TCP/IP, HTTP, CMake, Python Flask
+  - 일단 퇴근하고 네트워크부터 더 딥하게 파기
+  - GUI와 구현 언어에 대해 고민하기.. 가능하다면 무조건 C++ MFC로..
