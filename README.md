@@ -348,4 +348,4 @@ $ echo 'setterm -blength 0' >> ~/.bashrc
     1. $ sudo mkdir /data
     2. $ sudo mount /dev/sda1 /data
     3. $ sudo blkid ## UUID 확인
-    4. $ UUID=xxxx-xxxx  /data  ext4  defaults  0  2 # 이걸해줘야 영구적으로 마운트!
+    4. /etc/fstab에 "UUID=xxxx-xxxx  /data  ext4  defaults  0  2" 추가해주기 # 이걸해줘야 영구적으로 마운트!
