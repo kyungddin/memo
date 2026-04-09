@@ -454,3 +454,24 @@ Ninja는 **처음부터 병렬 실행 엔진으로 설계**됨.
 - 당장 더 익혀야 할 것: cpp, TCP/IP, HTTP, CMake, Python Flask
   - 일단 퇴근하고 네트워크부터 더 딥하게 파기
   - GUI와 구현 언어에 대해 고민하기.. 가능하다면 무조건 C++ MFC로..
+
+
+## 260409
+- CMake Static Library Step
+  1. /lib와 /includes 생성 후 소스와 헤더 작성
+  2. /lib에 CMakeLists.txt 스크립트 작성
+    - add_Library()는 add_executable처럼 파일을 생성하는 명령어
+    - target_include_directories()로 헤더 파일 경로 추가 (PUBLIC을 하면 이후 메인 CMake에서도 헤더 파일 경로를 추적)
+  3. 메인 CMakeLists.txt 작성
+    - add_subdirectory()로 lib 추가해주기
+    - target_link_libraries()로 라이브러리 링크해주기
+
+- CMake 명령어 몇 가지
+  1. set(MY_VAR value): 변수 선언 및 값 저장
+  2. include_directories(): 구식.. target_include_direcotries() 추천 (헤더 탐색 경로 추가)
+  3. add_subdirectory(): 해당 디렉토리의 CMakeListx.txt를 읽어서 타깃을 가져와라?
+  4. include(): C/C++의 #include와 같이 해당 파일의 코드를 추가해주는 것
+ 
+- 아직 CMake의 타깃 개념이 완벽하게 정리가 안됐지만..
+  - include_directories는 경로를 직접 추가해준다
+  - target_include_direcoties는 라이브러리만 추가해준다 (그리고 타깃인 라이브러리가 그 경로를 들고있다..? 어렵네..)
