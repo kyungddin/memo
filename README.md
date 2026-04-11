@@ -1,5 +1,7 @@
 # memo
+여러가지 메모
 
+---
 
 ## To Do List
 - 레포지토리 Readme 업데이트
@@ -15,20 +17,17 @@
 - TCP의 핸드셰이킹 개념 체화하기
 - 메모 한 번 싹 정리해야 할 거 같은데..
 - 월별로 했던 일 정리하기 + 업무노트 구매
-  
-<br>
 
-- roadmap
-  - 컴퓨터 네트워크: 하향식 접근
-  - SQL
-  - C++: STL, Effective, Algorithm, MFC
-  - Docker & Kubernetes
-  - Mini Project (OS/Network/DB)
+
+## roadmap
+- 4월: DB, Computer Network
+- 5월: GUI, C++
+- 6월: 실전!
+
+---
 
 ## 260305
-
 - Python in C/C++
-
 ```cpp
   #include <Python.h>
 
@@ -39,29 +38,36 @@
   	Py_Finalize();
   }
 ```
+- 하지만 pybind를 쓰는 것도 좋다
 
 
 ## 260313
 - MinGW: Minimalist GNU for Windows
+
 - VSC에서 C++ 확장을 설치해도 GNU Compiler가 없으면 컴파일이나 디버깅이 안된다
+
 - GNU 용어 정리
   - GNU: 프로젝트의 이름. 자유 소프트웨어로 구성된 완전한 OS 만들기 프로젝트? (GNU = GNU's Not Unix)
   - GCC: GNU의 Compiler
   - GDB: GNU의 Debugger
   - G++: GCC 안의 C++ 컴파일러
     - 따라서 같은 c++ 소스여도 gcc로 컴파일하냐 g++로 컴파일하냐에 따라 링킹 결과가 다를 수 있다
+  - gnome도 있어요
+
 - Visual Studio 작업에 따른 프로젝트&솔루션 명 수정
   - 솔루션은 모르겠는데 프로젝트는 IDE 내에서 이름을 바꿔도 이것이 반영이 안되는 경우가 흔하다
   - 따라서 직접 로컬에서 이름을 바꿔줘야 하는데, 그냥 바꾸기만 하면 오류난다
   - 따라서 sln(솔루션 파일)을 메모장으로 연 뒤에, proj 파일명과 디렉토리를 수정해줄 필요가 있다
   - 그리고 IDE 내에서도 단순히 프로젝트&솔루션 명 뿐만 아니라 네임스페이스 명도 신경써서 수정해주기
   - 이렇게 이쁘게 정리를 해줘야 나중에 Readme 쓸 때 편해진다
+
 - \r은 carriage return
+
 - "Q"으로 git log를 탈출할 수 있다
 
 
 ## 실제로 시스템콜을 직접 다룰 경우는 없을 것이다..!
-
+- Structure
 ```
 C/C++ 코드
 ↓
@@ -73,8 +79,8 @@ System Call
 ↓
 Kernel
 ```
+  - 우리의 시스템콜은 이렇게 호출되므로.. 우리는 간접적으로 시스템콜을 사용한다
 
-- 우리의 시스템콜은 이렇게 호출되므로.. 우리는 간접적으로 시스템콜을 사용한다
 - 가령 WinAPI인 CreateMutex()를 써서 mutex를 사용하는 코드가 MFC 내에서 보인다
 
 
@@ -97,13 +103,15 @@ Python VM
 
 - 즉, 파이썬은 컴파일 시 기계어로 변환되지 않는다
   - 대신에 바이트코드를 VM이 해석하는 식으로 동작한다 (그래서 느림)
+    
 - 추가로 파이썬의 자료형은 Dynamic Typing이므로, VM이 이를 해석하는 과정이 포함되어 더 느리다
+  
 - Java
   - Java는 인터프리터와 컴파일 언어의 중간 정도
   - JVM, 즉 VM을 거치는 것은 맞지만, 자주 쓰는 코드는 JIT Compile을 통해 기계어로 변환
   - 그렇기에 Python과 C의 중간 정도의 속도를 자랑한다
- - 좀 더 정확한 Python 동작 Structure
 
+- 좀 더 정확한 Python 동작 Structure
 ```
 Python code
 ↓
@@ -117,14 +125,16 @@ machine code
 ↓
 CPU
 ```
-Python의 실제 컴파일 과정
 
 
 ## 260317
 - SCP → SSH를 이용한 파일 복사 프로토콜
+  
 - Git을 통해 Github에 push/pull 해줄 때 HTTPS와 SSH를 사용
   - Git은 파일이 아니라 commit graph와 object를 동기화합니다. 따라서 SCP가 아닌 SSH 프로토콜을 사용하는 것
+    
 - 도커와 쿠버네티스를 엮어서 가르치는 이유는, 쿠버네티스가 많은 수의 도커 컨테이너를 효율적으로 관리해주는 기술이기 때문이다
+  
 - Layer4의.. QUIC을 이용한 LiDAR Wireless Communication?
 
 
@@ -169,20 +179,25 @@ Python의 실제 컴파일 과정
 - https://gomu92.tistory.com/13
   - 만약 리눅스 깔 때 root로 SSH 비밀번호 접속 옵션 안 키면 이거 보고 수정해주자
   - /etc/ssh/sshd_conf
+    
 - PasswordAutentication 옵션으로 일반 유저도 접속 가능
+  
 - Linux 쓸 때 User별로 디렉터리 환경이나 Config가 다르니까 그걸 감안해서 환경 세팅을 해주도록 하자
 
 
 ## 260320
-- Powershell 마저 Linux 터미널 명령어가 안 먹는 경우가 많은데, Git-bash로 갈아타자..
+- Powershell 마저 Linux 터미널 명령어가 안 먹는 경우가 많은데, Git-bash로 갈아타자
+  
 - Visual Studio Code에서 Git-Bash 기본 터미널로
   - ctrl+,로 설정 들어가서 terminal.integrated.defaultprofile.windows 검색
   - null -> git-bash
+    
 - 마운트 지점 설정 안 하면 매 부팅시마다 마운트 폴더 증발되는 이유.. 왜 그런지 파악하기
 
 
 ## 260321
 - Pull Request, git 명령어의 branch 관리 등, 아직 깃허브 활용 역량을 더 키울 여지가 있다..!
+
 - README에 상대경로를 지정해서 이미지 넣기
 ```
 <img src="img/scan.png">
@@ -194,13 +209,16 @@ Python의 실제 컴파일 과정
   - 브리지: VM에 추가적인 IP를 할당하는 것 (즉, VM을 별도의 네트워크 노드로 보는 것)
   - NAT: 호스트에 내부망을 만들고 거기에 VM을 연결 (즉, VM을 호스트 안에 숨긴다)
     - 실질적으로 통신은 호스트의 IP로 하므로.. 이를 걱정 ㄴㄴ 해
-- 서브넷의 /24는 앞의 24비트만 쓴다는 뜻이었지..
+      
+- 서브넷의 /24는 앞의 24비트만 쓴다는 뜻이었지
+  
 - 전자메일 프로토콜: POP3/IMAP/SMTP
   - 클라이언트 to 서버 OR 서버 to 서버: SMTP 프로토콜 사용
   - 서버 to 클라이언트: POP3 or IMAP 프로토콜 사용
     - POP3: 메일을 서버에서 가져와서 다운로드
     - IMAP: 메일을 서버에 두고 동기화
   - 전달과 관리의 역할이 다르기에 이렇게 프로토콜이 나뉜다
+    
 - 네트워크 프로토콜, 가령 SSH를 사용하다가 서버가 뻑 나는 경우가 있는데.. 어떤 경우가 있는지 research
 
 
@@ -208,17 +226,23 @@ Python의 실제 컴파일 과정
 - Ansible Playbook 명령어를 쓰면, 그것이 활성화시키는 main.yml의 상대경로는 명령어에 따라 달라지낟
   - Shell 명령어는 일반적인 기준을 적용하면 된다
   - copy나 template은 ansible playbook 명령어가 사용되는 디렉터리를 기준으로한다
+    
 - enp0s3나 enp2s0은 장치 위치에 따른 이름으로.. 일반적으로 enp0s3는 VM에서 쉽게 볼 수 있는데 자세한 건 더 알아보기
   - s 앞은 PCI 버스 번호, s 뒤는 슬롯 번호
   - 그리고.. 윈도우에서는 이러한 장치명은 안 쓰고 직관적으로 이더넷 이런식으로 표기
-- 리눅스(혹은 쉘인지) 버전에 따라 tar가 상대경로가 안 먹을 수도 있으니 참고 발암
+    
+- 리눅스(혹은 쉘인지) 버전에 따라 tar가 상대경로가 안 먹을 수도 있으니 참고바람
+  
 - SQL Create 구문 까다로운데 이에 대한 파악 필요..
 
 
 ## 260325
 - SQL 명령어에 문제가 있다면 SQL 서버와 socket 오류가 날 수 있다, 네트워크 문제로 생각하지 말고 syntax 체크부터!
+  
 - docker compose는 자동으로 이미지를 갱신해주지 않으니, 명령어에 build를 붙여서 갱신해주기
+  
 - vrrp_instance VI_1 = “하나의 가상 라우터(VIP + 상태 관리 단위)”
+  
 - UNIX Socket이란게 있고.. MariaDB는 그러한 소켓 방식을 사용해서 통신할 수도 있는데.. 이에 대해선 좀 더 공부하자
   - MariaDB는 localhost != 127.0.0.1
   - host를 안쓰거나 localhost를 쓰면 자동으로 UNIX Socket 통신
@@ -230,11 +254,14 @@ Python의 실제 컴파일 과정
    
 ## 260326
 - 윈도우 자격 증명 때문에 깃 안될 수도..
+  
 - VSC 전체 주석 ctrl+/
+  
 - Docker Network의 브리지의 경우 컨테이너가 run이 되지 않는다면 veth0와 br 네트워크 장치가 안생긴다
+  
 - 왜인지 모르겠지만 mariadb를 도커 환경에서 실행할 경우 권한이나 접근 자체에 문제가 생기는 경우가 부지기수
+  
 - vm에서 nat 네트워크의 dhcp 알아두기
-
 
 
 ## 260327
@@ -242,10 +269,12 @@ Python의 실제 컴파일 과정
   - 호스트 컴퓨터가 NAT 게이트웨이 역할을 하며, 가상 머신의 네트워크 트래픽을 인터넷으로 라우팅한다.
   - VirtualBox NAT 엔진이 DHCP로 강제로 IP를 지정 (10.0.2.15 부터 자동~)
     - 그래서 만약 고정 IP를 사용하면 변환 과정에서 네트워크 내 기기로 판단하지 않고 먹통이 되는 것..!
+      
 - LAN에서의 IP vs MAC
   - LAN에서 실제 데이터의 전달은 MAC 주소를 통해서 이루어진다
   - 다만.. 송신지와 수신지를 특정하는 논리적 체계로서.. 페이로드에 있는 IP 주소 정보를 활용한다
-  - 아 그리고 이때 ARP Protocol을 썼었지..!@@!
+  - 아 그리고 이때 ARP Protocol을 썼었지!
+    
 - SHEBANG
   - 대표적인 쉬뱅 구문
   ```
@@ -304,6 +333,7 @@ docker save -o image.tar image:tag
 
 ## 260402
 - Git CRLF 무시하는 옵션 찾아놓기
+  
 - HTTP 프로토콜로 GIt 대용량 업로드 하면 push에서 터진다
   - git config --global http.postBuffer 524288000
   - 이걸로 해결
@@ -317,6 +347,7 @@ docker save -o image.tar image:tag
 
 ## 260406
 - keepalived의 경우 특정 옵션이 서로의 타이밍 이슈에 영향을 줄 수 있다 (ex: interval, timeout)
+  
 - 쉘스크립트의 경우 if문은 0에서 활성화
 
 
@@ -326,19 +357,29 @@ docker save -o image.tar image:tag
 
 ## 260408
 - C++ 빵꾸: 복사생성자, Static 멤버, 연산자 중복, 상속, 가상함수 (일단은 여기까지만..)
-- 보조기억장치가 여러 개 있는 상황에서, EFI가 깔리지 않은 곳에 OS를 설치하면 부팅 옵션에서 볼 수 없다..
+  
+- 보조기억장치가 여러 개 있는 상황에서, EFI가 깔리지 않은 곳에 OS를 설치하면 부팅 옵션에서 볼 수 없다
+  
 - 부트시스템 공부: EFI, 파티션, 포맷 등등
+  
 - 리눅스 시스템에서 파티션 정리하기
+```
 1. $ lsblk 로 메모리 체크
 2. $ sudo wipefs -a /dev/sda 이건 sda 저장장치 날리기
 3. $ sudo fdisk /dev/sda 새 파티션 생성 (n으로 새로운 파티션 생성 w로 저장)
 4. $ sudo mkfs.ext4 /dev/sda1 (파티션 데이터용으로 만들어주기)
 5. (centos8 기준) $ sudo grub2-mkconfig -o /boot/grub2/grub.cfg 로 grub(boot loader) 정리
+```
+   
 - 비프음 죽이기
+```
 $ echo 'setterm -blength 0' >> ~/.bashrc
+```
+
 - 파티션의 중요성
   - GPT: 파티션은 ‘공간 분할’이 아니라 운영체제에게 “이 디스크를 어떻게 써라”라고 알려주는 ‘메타데이터(설계도)’임
   - 즉, 운영체제 입장에서 그냥 /dev/sda는 원시데이터 덩어리라 데이터 저장용으로 활용 불가
+    
 - 윈도우 shell에서 패키지를 설치하거나 빌드를 해주려면..
   - MSYS2(Minimal System2)는 윈도우즈(Windows) 운영체계 하에서 라이브러리 또는 소프트웨어를 빌드할 때 사용하는 플랫폼입니다.
   - 이걸 깔면 MINGW도 자동으로 Setup!
