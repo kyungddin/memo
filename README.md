@@ -585,3 +585,24 @@ Ninja는 **처음부터 병렬 실행 엔진으로 설계**됨.
   - Windows는 역사적으로 초기에 네트워크 없는 OS였다. 즉 특정 프로세스가 네트워크를 사용하려면 DLL을 로드해서 네트워크 스택에 연결해줘야 함
   - 반대로 Linux는 네트워크마저 파일 시스템의 일부로. 프로세스 생성 시 커널 네트워크 스택에 자동으로 연결된다
   - 따라서 WinSock 사용시 WSADATA를 초기화 해줘야 한다
+
+
+## 260415
+- C#만의 포인트
+  1. CLR 위에서 JIT을 돌림 (자바랑 같음)
+  2. 헤더 없음: 어셈블리 단위 (컴파일 단위가 Assembly? 그래서 include 개념이 없다?)
+  3. 포인터 대신 참조 씀 + GC (메모리 leakage 방지)
+  4. property: 함수지만 변수처럼 보이는 것?
+  5. LINQ
+  6. envet / delegate
+  7. 리플렉션
+  8. async / await
+  9. attribute
+
+- C#에서 공부해야 하는 것
+  1. property
+  2. LINQ
+  3. event / delegate
+  4. async / await
+  5. attribute
+  6. WPF 데이터 바인딩 개념
