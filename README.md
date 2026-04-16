@@ -606,3 +606,10 @@ Ninja는 **처음부터 병렬 실행 엔진으로 설계**됨.
   4. async / await
   5. attribute
   6. WPF 데이터 바인딩 개념
+
+
+## 260416
+- 도커 이미지 빌드 명령어
+```bash
+docker build -t tw-db-connector:v1.0 .
+```
