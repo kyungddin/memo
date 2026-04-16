@@ -635,3 +635,6 @@ docker save -o [파일명].tar [이미지명]:[태그]
 - 정확히 기억 안 나지만 cmake나 makefile 둘 중 하나는 리눅스 환경에서 CRLF에 민감하니 이를 꼭 체크해주기
 
 - HTTP의 메시지 포맷을 제대로 파싱하는 것에 유의! 특히 CRLF!
+
+- CMake, Makefile, Dockerfile 정리
+  - Doxy 사용법도 숙달하면 좋지만.. 난 직접 README 작성하는게 더 나아보임
