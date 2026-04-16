@@ -611,5 +611,20 @@ Ninja는 **처음부터 병렬 실행 엔진으로 설계**됨.
 ## 260416
 - 도커 이미지 빌드 명령어
 ```bash
-docker build -t tw-db-connector:v1.0 .
+docker build -t tw-db-connector:v1.0 . # .는 빌드 디렉토리
 ```
+
+- 도커 이미지 빌드
+```dockerfile
+ENV DEBIAN_FRONTEND=noninteractive
+```
+  - 이게 있다면 사용자 상호작용이 아예 없으므로 표준시간이 None으로 된다
+
+- 도커 이미지 압축
+```dockerfile
+docker save -o [파일명].tar [이미지명]:[태그]
+```
+
+- pybind와 pybind_json은 개발자들이 cmake가 용이하게 파일을 통으로 배포했다
+  - Copyright이나 과한 수정 금지!!
+ 
