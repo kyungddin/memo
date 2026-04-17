@@ -659,3 +659,8 @@ docker save -o [파일명].tar [이미지명]:[태그]
 
 - 리눅스에서 Swap 파티션을 RAM에 2배로 할당하는 이유
   - 가상 메모리 매핑의 안정성, LRU 성능 향상 등, 결국 Hierarchy를 효율적으로 달성하기 위함
+
+- 윈도우 bash에서 python 패키지 설치하기
+  ```bash
+  $ python -m pip install matplotlib
+  ```
