@@ -635,6 +635,19 @@ docker save -o [파일명].tar [이미지명]:[태그]
 - 정확히 기억 안 나지만 cmake나 makefile 둘 중 하나는 리눅스 환경에서 CRLF에 민감하니 이를 꼭 체크해주기
 
 - HTTP의 메시지 포맷을 제대로 파싱하는 것에 유의! 특히 CRLF!
-
+  
 - CMake, Makefile, Dockerfile 정리
   - Doxy 사용법도 숙달하면 좋지만.. 난 직접 README 작성하는게 더 나아보임
+
+## 260417
+- 우분투 서버 네트워크 문제
+  - archive.ubuntu.com은 여러 대의 서버가 랜덤하게 연결되는데, 하필 오늘 연결된 IP가 상태가 안 좋을 수도 있다!
+  - 해결 방법: 미러 서버 교체
+    - 기본 서버(archive.ubuntu.com)는 해외 서버라 종종 이런 연결 끊김이 발생한다. 한국의 카카오 서버 등으로 변경하면 속도도 수십 배 빨라지고 훨씬 안정적이다!
+    - Dockerfile Setting
+    ```Dockerfile
+    # 기본 서버를 카카오 미러 서버로 교체
+    RUN sed -i 's/archive.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list && \
+        sed -i 's/security.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list
+    ```
+
