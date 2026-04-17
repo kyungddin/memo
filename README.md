@@ -650,4 +650,12 @@ docker save -o [파일명].tar [이미지명]:[태그]
     RUN sed -i 's/archive.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list && \
         sed -i 's/security.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list
     ```
-- Swap Space 확실하게 공부해서 Swap 파티션 알아두기
+- Swap Space 복습
+  - 메모리 가상화 단계에서, 우리는 프로그램을 load할 때 전체를 load하지 않고 일단 Swap Space에 박아둔다
+  - page fault가 발생하면 디스크에서 일부를 가져와 램에 올린다
+  - 보다 정확하게 프로그램이 실행되면 램 & 스왑공간 & 디스크 세 공간에 존재한다
+    - Small Binary: (코드 + 초기화된 데이터) 원본이 파일로 존재함 && Swap Space: (수정된 데이터 + BSS + 힙 + 스택) 원본 파일이 없음(Anonymous).
+    - 그래서 일반적으로 Binary보다 Swap Space 상의 프로그램 데이터 크기가 더 크다
+
+- 리눅스에서 Swap 파티션을 RAM에 2배로 할당하는 이유
+  - 가상 메모리 매핑의 안정성, LRU 성능 향상 등, 결국 Hierarchy를 효율적으로 달성하기 위함
