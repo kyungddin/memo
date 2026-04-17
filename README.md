@@ -650,4 +650,4 @@ docker save -o [파일명].tar [이미지명]:[태그]
     RUN sed -i 's/archive.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list && \
         sed -i 's/security.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list
     ```
-
+- Swap Space 확실하게 공부해서 Swap 파티션 알아두기
