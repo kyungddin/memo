@@ -639,6 +639,7 @@ docker save -o [파일명].tar [이미지명]:[태그]
 - CMake, Makefile, Dockerfile 정리
   - Doxy 사용법도 숙달하면 좋지만.. 난 직접 README 작성하는게 더 나아보임
 
+
 ## 260417
 - 우분투 서버 네트워크 문제
   - archive.ubuntu.com은 여러 대의 서버가 랜덤하게 연결되는데, 하필 오늘 연결된 IP가 상태가 안 좋을 수도 있다!
@@ -664,3 +665,28 @@ docker save -o [파일명].tar [이미지명]:[태그]
   ```bash
   $ python -m pip install matplotlib
   ```
+
+
+## 260418
+- Visual Studio 작업한 거 Git하다보니 용량 Issue 발생 >> .gitignore 최초 작성
+  - .gitignore 사용법
+    1. 디렉토리 작성하면 해당 디렉토리 전부 무시함 (간단하게 디렉토리 패스만 써주면 된다)
+    ```
+    CPP/MySocket/.vs
+    ```
+    2. 파일무시
+    ```
+    test.exe
+    config.json
+    ```
+    3. 특정 확장자 무시 (wild character)
+    ```
+    *.log
+    *.tmp
+    *.o
+    ```
+  - 작성했으면, 수동으로 이전에 잔여 파일도 제거해주자
+    ```bash
+    # .vs는 디렉터리 명임
+    git rm -r --cached .vs 
+    ```
