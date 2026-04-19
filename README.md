@@ -690,3 +690,8 @@ docker save -o [파일명].tar [이미지명]:[태그]
     # .vs는 디렉터리 명임
     git rm -r --cached .vs 
     ```
+
+
+## 260419
+- 쿠버네티스 vs docker compose 조사하기
+- 리액트 조사하기
