@@ -753,3 +753,9 @@ docker save -o [파일명].tar [이미지명]:[태그]
   - C까지 호환되는 라이브러리 쓸 때는 보통 **로 선언되어 있음
     
 - XML과 DOM Tree research하고 정리하기
+
+
+## 260506
+- git branch 생성 관련 테크닉
+  - `$ git checkout -b <name>` 로 새로운 브랜치 생성
+  - `$ git push --set-upstream ` 로 새로운 브랜치에 대해 원격에 push
