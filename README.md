@@ -759,3 +759,7 @@ docker save -o [파일명].tar [이미지명]:[태그]
 - git branch 생성 관련 테크닉
   - `$ git checkout -b <name>` 로 새로운 브랜치 생성
   - `$ git push --set-upstream origin feature/haha` 로 새로운 브랜치에 대해 원격에 push
+
+
+## 260507
+- SQL에서 Column이 ROM인 경우가 있는데 왜 그런지 Research
