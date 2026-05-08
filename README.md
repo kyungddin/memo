@@ -763,3 +763,10 @@ docker save -o [파일명].tar [이미지명]:[태그]
 
 ## 260507
 - SQL에서 Column이 ROM인 경우가 있는데 왜 그런지 Research
+
+- C/C++에서 path를 상대경로로 지정하면 빌드된 exe 파일을 실행할 때 에로사항이 발생할 수 있다
+  - 따라서 절대경로와 출력 디렉터리 설정을 적절하게 해줄 필요가 있음
+
+## 260508
+- `$ git config --global --get pull.ff` 를 해줘야 fast forward 없이 merge가 가능하도록 기본값이 바뀜
+  - fast forward를 고려해서 브랜치를 관리하는 연습을 해보기
