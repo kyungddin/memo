@@ -53,3 +53,9 @@
 ## 260508
 - `$ git config --global --get pull.ff` 를 해줘야 fast forward 없이 merge가 가능하도록 기본값이 바뀜
   - fast forward를 고려해서 브랜치를 관리하는 연습을 해보기
+
+
+## 260509
+- git commit 메시지는 제목과 본문이 나뉜다
+  - 제목과 본문 사이에 빈 줄이 반드시 있어야 한다
+  - CLI에서 merge 할 때도 이것이 적용된다
