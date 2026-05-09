@@ -59,3 +59,19 @@
 - git commit 메시지는 제목과 본문이 나뉜다
   - 제목과 본문 사이에 빈 줄이 반드시 있어야 한다
   - CLI에서 merge 할 때도 이것이 적용된다
+
+- git config 범위 플래그
+  - `--system`: 이 컴퓨터의 모든 사용자
+  - `--global`: 이 컴퓨터의 현재 사용자
+  - `--local`: 해당 디렉터리 git에만
+
+- python virtual env 정리
+
+  ```markdown
+  # 프로젝트 폴더에서
+  python -m venv .venv              # 가상환경 생성
+  source .venv\Scripts\activate            # 활성화 (Windows: git bash)
+  pip install -r requirements.txt   # 패키지 설치
+  # ... 작업 ...
+  deactivate                        # 비활성화
+  ```
