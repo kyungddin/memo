@@ -82,3 +82,9 @@
   - PySide6 기본 구조 이해
   - 커스텀 타이틀바 코드 분석
   - 네이버 금융 API JSON 구조 파악
+
+- Git Alert 작업 내용
+  - PySide6 타이틀바 코드 분석
+  - GitHub Webhook + ngrok + Flask + winotify 연동
+  - 방해금지 모드와의 전쟁 승리
+  
