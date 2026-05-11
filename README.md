@@ -87,4 +87,8 @@
   - PySide6 타이틀바 코드 분석
   - GitHub Webhook + ngrok + Flask + winotify 연동
   - 방해금지 모드와의 전쟁 승리
-  
+
+
+## 260511
+- Git Alert에 .env 추가하기
+- 
