@@ -91,4 +91,9 @@
 
 ## 260511
 - Git Alert에 .env 추가하기
-- 
+
+
+## 260512
+- git에서 원격 브랜치 특정 커밋 삭제하기 (주의)
+  - `$ git reset --hard` 로 특정 커밋 날리기
+  - `$ git push origin 브랜치명 --force`로 해당 결과물 강제로 원격에 push
