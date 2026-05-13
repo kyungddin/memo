@@ -106,3 +106,17 @@
 ## 260513
 - C++ MFC 디버깅 팁
   - AssertValid()에 중단점 걸면 메모리 크러시 없이 추적을 진행할 수 있다
+
+- C++ MFC Create Style
+  ```markdown
+  WS_  Window Style  윈도우 공통 스타일
+  ES_  Edit StyleEdit  컨트롤 전용 스타일
+  BS_  Button   StyleButton 컨트롤 스타일
+  SS_  Static   StyleStatic 컨트롤 스타일
+  LBS_  ListBox   StyleListBox 스타일
+  CBS_  ComboBox   StyleComboBox 스타일
+  SBS_  ScrollBar   StyleScrollBar 스타일
+  TBS_  TrackBar   StyleTrackBar(슬라이더) 스타일
+  PBS_  ProgressBar   StyleProgressBar 스타일
+  WS_  EX_Window Style Extended  확장 윈도우 스타일
+  ```
