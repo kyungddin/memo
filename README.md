@@ -101,3 +101,8 @@
 - git에서 merge가 완료된 feature는 삭제하자 (재사용 금지!)
   - `$ git branch -d feature/브랜치명`
   - `$ git push origin --delete feature/브랜치명`
+
+
+## 260513
+- C++ MFC 디버깅 팁
+  - AssertValid()에 중단점 걸면 메모리 크러시 없이 추적을 진행할 수 있다
