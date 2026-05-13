@@ -120,3 +120,9 @@
   PBS_  ProgressBar   StyleProgressBar 스타일
   WS_  EX_Window Style Extended  확장 윈도우 스타일
   ```
+
+- C++ 동적 배열 생성
+  ```cpp
+  std::vector<CChartBalloonLabel<SChartXYPoint>*> pLabel(size);
+  ```
+  - 그냥 이런식으로 vector로 패자
