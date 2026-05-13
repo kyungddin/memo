@@ -126,3 +126,7 @@
   std::vector<CChartBalloonLabel<SChartXYPoint>*> pLabel(size);
   ```
   - 그냥 이런식으로 vector로 패자
+
+- git --amend
+  - `$ git commit --amend` 를 쓰면 이전 커밋과 합친다
+  - `$ git commit --amend --no-edit` 을 하면 커밋 메시지 그대로 유지한다!
