@@ -130,3 +130,8 @@
 - git --amend
   - `$ git commit --amend` 를 쓰면 이전 커밋과 합친다
   - `$ git commit --amend --no-edit` 을 하면 커밋 메시지 그대로 유지한다!
+
+
+## 260514
+- `$ git fetch --prune` ?
+  - git fetch 동작에 대해서는 더 공부할 필요가 있어 보임
