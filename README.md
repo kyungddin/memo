@@ -147,3 +147,8 @@
     - 순환 참조 (무한 루프)
     - 순환 참조를 `#pragma once` 와 같은 가드로 막아도, 해당 헤더의 일부만을 읽는 식의 오류가 발생
     - 이를 방지하기 위해 전방 선언을 사용하는 것
+
+- SonarQube Test
+  - Sequrity Spot: strlen or wcslen
+    - 이 두 함수는 기본적으로 string이나 wide character 문자열이 nullptr이 아니라는 가정하에 짜여진 함수이다
+    - 따라서, 예외처리 로직이 앞서 선행 되지 않으면 undefined behavior, 즉 미정의 동작 발생 가능성이 있다
