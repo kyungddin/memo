@@ -152,3 +152,7 @@
   - Sequrity Spot: strlen or wcslen
     - 이 두 함수는 기본적으로 string이나 wide character 문자열이 nullptr이 아니라는 가정하에 짜여진 함수이다
     - 따라서, 예외처리 로직이 앞서 선행 되지 않으면 undefined behavior, 즉 미정의 동작 발생 가능성이 있다
+
+
+## 260518
+- `git push --force-with-lease` 를 써서 --amend 커밋에 대해 강제 push
